@@ -1,0 +1,68 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s linear;
+}
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  background: rgba(0,0,0,0.09);
+}
+
+.container
+{
+  padding-top: 1px;
+  position: relative;
+}
+
+.drop
+{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 100%;
+  box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+}
+
+.drop:hover
+{
+  border-radius: 33% 67% 43% 57% / 30% 33% 67% 70% ;
+}
+
+.drop::before
+{
+  content:'';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.drop::after
+{
+  content:'';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
